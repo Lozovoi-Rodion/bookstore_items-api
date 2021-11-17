@@ -1,10 +1,10 @@
 package controllers
 
 import (
-	"fmt"
 	"github.com/Lozovoi-Rodion/bookstore-oauth-go/oauth"
 	"github.com/Lozovoi-Rodion/bookstore_items-api/domain/items"
 	"github.com/Lozovoi-Rodion/bookstore_items-api/services"
+	"github.com/Lozovoi-Rodion/bookstore_items-api/utils/http_utils"
 	"net/http"
 )
 
@@ -22,7 +22,7 @@ type itemsController struct {
 
 func (c *itemsController) Create(w http.ResponseWriter, r *http.Request) {
 	if err := oauth.AuthenticateRequest(r); err != nil {
-		// TODO: Return error json to the user
+		http_utils.RespondError(w, err)
 		return
 	}
 
@@ -32,11 +32,11 @@ func (c *itemsController) Create(w http.ResponseWriter, r *http.Request) {
 
 	result, err := services.ItemsService.Create(item)
 	if err != nil {
-		// TODO: Return error json to the user
+		http_utils.RespondError(w, err)
+		return
 	}
 
-	fmt.Println(result)
-	//TODO: Return create item as json, 201
+	http_utils.RespondJson(w, http.StatusCreated, result)
 }
 
 func (c *itemsController) Get(w http.ResponseWriter, r *http.Request) {

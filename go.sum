@@ -1,5 +1,7 @@
 github.com/Lozovoi-Rodion/bookstore-oauth-go v0.0.0-20211115184308-b11a0b32ee1f h1:NAP/IlcWQQ2T3LicUxK3M7Gkf8TL1o3c8OkwnJlruTs=
 github.com/Lozovoi-Rodion/bookstore-oauth-go v0.0.0-20211115184308-b11a0b32ee1f/go.mod h1:fqBCQhy+rbt6QUrnbDbKn0Ee+GhUnzpNaviDjupDeMc=
+github.com/Lozovoi-Rodion/bookstore-oauth-go v0.0.0-20211117120043-d8c24f8bed04 h1:Wyn9lX4CTYmTy5K9x0lfOITaW/J01JFETEIXebrpfSQ=
+github.com/Lozovoi-Rodion/bookstore-oauth-go v0.0.0-20211117120043-d8c24f8bed04/go.mod h1:5eKQrzyIZ3hGQKFuWqp98jWCaQyIKPMZzj2KRUBQqSU=
 github.com/Lozovoi-Rodion/bookstore_utils-go v0.0.0-20211116102850-0146ad625c95 h1:t6m+rOoY+G5Nz1Np5OzrAIfWYJzw10wqMyHBPVD2AtA=
 github.com/Lozovoi-Rodion/bookstore_utils-go v0.0.0-20211116102850-0146ad625c95/go.mod h1:uNCx3QjY8WJWurr1pZiSI0tZ8z2raAqHyCRKkrYeYHU=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
